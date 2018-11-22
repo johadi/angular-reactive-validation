@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   buildForm() {
     this.form = this.formBuilder.group({
-      email: [null, [Validators.required]],
+      email: [null, [Validators.required, Validators.email]],
       username: [null, [Validators.required]],
       userCategory: ['employee'],
       institution: [null],
